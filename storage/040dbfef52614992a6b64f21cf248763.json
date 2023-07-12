@@ -1,0 +1,71 @@
+{
+    "name": "sample",
+    "description": "sample description",
+    "session_id": "040dbfef52614992a6b64f21cf248763",
+    "active_status": true,
+    "offline_folder_path": "storage/",
+    "created_timestamp": "2023-07-12 19:58:17.147118",
+    "update_timestamp": "2023-07-12 19:58:17.147118",
+    "filename": "040dbfef52614992a6b64f21cf248763.json",
+    "registry": [
+        {
+            "prompt_id": "3f885019ff6e47bd9616fb55f1a8c13d",
+            "name": "UserGreet",
+            "description": "to greet user with hi/hello/good morning etc",
+            "created_timestamp": "2023-07-12 19:58:17.147118",
+            "updated_timestamp": "2023-07-12 19:58:17.147118",
+            "collection": [
+                {
+                    "prompt_text": "Categories: ['sports','weather','movies']; \n                    What category best describes: it is raining outside; \n                    Answer:\n                   ",
+                    "created_timestamp": "2023-07-12 19:58:21.155394",
+                    "prompt_template": "TopicClassificationPrompt",
+                    "version": 1,
+                    "executable": true,
+                    "output": "Sentiment is Neutral",
+                    "metrics": {
+                        "profanity": false,
+                        "predicted_available_topic": false,
+                        "prompt_tokens": 26
+                    },
+                    "response_time": 0.0
+                },
+                {
+                    "prompt_text": "Categories: ['sports','weather','movies']; \n                    What category best describes: film is bad; \n                    Answer:\n                   ",
+                    "created_timestamp": "2023-07-12 19:58:21.155394",
+                    "prompt_template": "TopicClassificationPrompt",
+                    "version": 2,
+                    "executable": true,
+                    "output": "Sentiment is Neutral",
+                    "metrics": {
+                        "profanity": false,
+                        "predicted_available_topic": false,
+                        "prompt_tokens": 25
+                    },
+                    "response_time": 0.0
+                }
+            ]
+        },
+        {
+            "prompt_id": "202ef61283814467b675c3f93e2623dd",
+            "name": "ConversationCloser",
+            "description": "to close user conversation",
+            "created_timestamp": "2023-07-12 19:58:21.155394",
+            "updated_timestamp": "2023-07-12 19:58:21.155394",
+            "collection": [
+                {
+                    "prompt_text": "Please give a sentiment for this context. \n                    Answer with positive, negative or neutral. \n                    Context: film is bad; \n                    Answer:\n                    ",
+                    "created_timestamp": "2023-07-12 19:58:21.170403",
+                    "prompt_template": "SentimentAnalysisPrompt",
+                    "version": 1,
+                    "executable": true,
+                    "output": "Topic classified as Sports",
+                    "metrics": {
+                        "profanity": false,
+                        "prompt_tokens": 31
+                    },
+                    "response_time": 0.0
+                }
+            ]
+        }
+    ]
+}
