@@ -2,7 +2,6 @@ import os
 import json
 from time import time
 from prompt_core_executor import PromptCoreExecutor
-from old_code.helper_objects import PromptModel
 from session import Session, PromptModel, PromptCollection
 from session_maintenance import SessionMaintenance
 from prompt_maintenance import PromptMaintenance
