@@ -12,7 +12,7 @@ def execute_prompt_metrics(template_name, input_params, model_name):
     executor = PromptCoreExecutor(
         template_name, input_params=input_params, model_name=model_name)
     input_prompt = executor.generate_prompt_query()
-    executor.dummy_execute(input_prompt)
+    executor.execute(input_prompt)
     executor.calculate_metrics()
 
     newprompt = PromptCollection(input_prompt, version=0)
@@ -25,9 +25,9 @@ def execute_prompt_metrics(template_name, input_params, model_name):
 
 
 if __name__ == "__main__":
-    os.environ["OPENAI_API_KEY"] = ""
+    os.environ["OPENAI_API_KEY"] = "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"
     descriptor = Session("sample", "sample description", "storage/")
-    # --------------------
+    # ------------------------------------------------------------------
     model = PromptModel(
         "UserGreet", "to greet user with hi/hello/good morning etc")
     prompt_metadata = PromptMaintenance()
