@@ -66,16 +66,6 @@ class PromptCoreExecutor:
         end_time = time()
         self.response_time = end_time - start_time
 
-    def dummy_execute(self, input_prompt: str) -> str:
-        start_time = time()
-        random_response = ['Sentiment is Neutral', 'Sentiment is Positive',
-                           'Topic classified as Movie', 'Topic classified as Sports', 'Sentiment is negative']
-
-        self.executable = True
-        self.llm_response = random.choice(random_response)
-        end_time = time()
-        self.response_time = end_time - start_time
-
     def calculate_metrics(self):
         self.metrics['profanity'] = check_profanity(self.llm_response)
         if self.template_name == "TopicClassificationPrompt":

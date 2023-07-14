@@ -50,6 +50,18 @@ class SessionMaintenance:
         else:
             print("Unable to create session storage for saving the session as required")
             self.stop_session()
+    
+    def Save(self):
+        """Save : saving  a session with offline entry for session. All the activities will be tracked in that session node created.
+        """
+        if not os.path.exists(self.session_descriptor.filename):
+            f = open(self.session_descriptor.offline_folder_path+self.session_descriptor.filename,
+                     'w')  # open file in append mode
+            session_obj = json.dumps(
+                vars(self.session_descriptor), default=lambda o: o.__dict__)
+            f.write(session_obj)
+            f.close()
+
 
     def stop_session(self):
         """stop_session : Stop the session and close the storage objects
