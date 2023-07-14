@@ -34,4 +34,4 @@ def generate_session_json(filename:str):
             ds.append(data_dict)
 
     df = pd.DataFrame(ds)
-    print(df)
+    return session_data,df
