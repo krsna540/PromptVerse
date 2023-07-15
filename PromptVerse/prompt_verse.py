@@ -9,7 +9,7 @@ from prompt_maintenance import PromptMaintenance
 from prompt_core_executor import PromptCoreExecutor
 from gradio_ui import display_output
 
-class SmartPrompt:
+class PromptVerse:
     def __init__(self):
         self.promptmodel=None
         self.promptmaintenance=None

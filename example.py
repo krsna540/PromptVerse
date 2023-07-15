@@ -1,10 +1,10 @@
 import os
-from smart_prompt import SmartPrompt
+from prompt_verse import PromptVerse
 
 
 if __name__ == "__main__":
     os.environ["OPENAI_API_KEY"] = "" # provide your openai key here
-    sp=SmartPrompt()
+    sp=PromptVerse()
     template_df=sp.display_prompt_templates()
     
     sp.create_session(name="BlueAngel",description="New Session for BlueAngel Use case",offline_storage_location="storage/")

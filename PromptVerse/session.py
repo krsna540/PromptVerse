@@ -36,7 +36,7 @@ class PromptModel:
 
 
 class Session:
-    """SmartPromptSession : for creating a session with  offline storage -  local storage json path to store data.
+    """PromptVerseSession : for creating a session with  offline storage -  local storage json path to store data.
        Methods - create,load_session,stop_session
     """
 
