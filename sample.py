@@ -3,7 +3,7 @@ from src.prompt_verse import PromptVerse
 
 
 if __name__ == "__main__":
-    os.environ["OPENAI_API_KEY"] = "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" # provide your openai key here
+    os.environ["OPENAI_API_KEY"] = "" # provide your openai key here
     sp=PromptVerse()
     template_df=sp.display_prompt_templates()
     
