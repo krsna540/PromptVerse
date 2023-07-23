@@ -25,10 +25,6 @@ class FewShotPrompt:
                     ##
                     Question: {query}; 
                     """
-
-        template = template.replace("{persona}", input_params["persona"])
-        template = template.replace("{audience}", input_params["audience"])
-        template = template.replace("{max_length}", input_params["max_length"])
-        template = template.replace("{context}", input_params["context"])
-        template = template.replace("{query}", input_params["query"])
+        template = template.format(**input_params)
+        
         return template

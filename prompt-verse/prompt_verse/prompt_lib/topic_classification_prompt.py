@@ -17,6 +17,6 @@ class TopicClassificationPrompt:
                     What category best describes: {query}; 
                     Answer:
                    """
-        template = template.replace("{query}", input_params["query"])
-        template = template.replace("{options}", input_params["options"])
+        template = template.format(**input_params)
+        
         return template

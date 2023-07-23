@@ -16,5 +16,6 @@ class LanguageDetectionPrompt:
                     Context: {query}; 
                     Answer:
                    """
-        template = template.replace("{query}", input_params["query"])
+        template = template.format(**input_params)
+        
         return template
