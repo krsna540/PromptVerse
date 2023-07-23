@@ -18,6 +18,6 @@ class ContextQuestionAnsweringPrompt:
                     Question: {query}; 
                     Please answer yes or no! Answer:
                     """
-        template = template.replace("{context}", input_params["context"])
-        template = template.replace("{query}", input_params["query"])
+        template = template.format(**input_params)
+
         return template

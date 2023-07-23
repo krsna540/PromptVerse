@@ -9,7 +9,7 @@ def PromptVerseRegistry(Prompts):
 
 def display_output(filepath:str):
     session_info,df=generate_session_json(filepath)
-    inputs =gr.Dataframe(df)
+    inputs = gr.Dataframe(df)
     with gr.Blocks() as demo:
         gr.Interface(fn=PromptVerseRegistry, inputs = inputs, outputs = None,title="PromptVerse",description="PromptVerse is a registry capable of logging prompts, autoversioning, calculating metrics.\n Below interface is Readonly")
         demo.launch(height="700px",width="500px")

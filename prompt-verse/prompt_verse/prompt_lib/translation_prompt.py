@@ -16,7 +16,6 @@ class TranslationPrompt:
         template = """Translate the following context to {target_language}. Context: {query}; 
                     Translation:
                     """
-        template = template.replace(
-            "{target_language}", input_params["target_language"])
-        template = template.replace("{query}", input_params["query"])
+        template = template.format(**input_params)
+        
         return template

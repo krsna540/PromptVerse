@@ -1,1 +1,69 @@
-{"name": "BlueAngel", "description": "New Session for BlueAngel Use case", "session_id": "c2159ecf3bd84719ac2d0f3d43113199", "active_status": true, "offline_folder_path": "storage/", "created_timestamp": "2023-07-22 18:37:21.944275", "update_timestamp": "2023-07-22 18:37:21.944275", "filename": "c2159ecf3bd84719ac2d0f3d43113199.json", "registry": [{"prompt_id": "4d4194b3d2b24380a0be84be2567efd6", "name": "GreetUser", "description": "greeting user at begining of conversation", "created_timestamp": "2023-07-22 18:37:21.946511", "updated_timestamp": "2023-07-22 18:37:21.946511", "collection": [{"prompt_text": "You are a Nurse ChatBot and your audience are Patient.\n                     Create a concise and informative answer (no more than 10 words) for a given question \n                      Greet the person \n                   ", "created_timestamp": "2023-07-22 18:37:24.303317", "prompt_template": "ZeroShotPrompt", "version": 1, "executable": false, "output": "Hello! How can I assist you today?", "metrics": {"profanity": false, "prompt_tokens": 39}, "response_time": 1.8874340057373047}, {"prompt_text": "Greet John Ryan", "created_timestamp": "2023-07-22 18:37:26.027347", "prompt_template": "ZeroShotPrompt", "version": 2, "executable": false, "output": "Hello John Ryan! How are you today?", "metrics": {"profanity": false, "prompt_tokens": 4}, "response_time": 1.7085800170898438}]}, {"prompt_id": "dd58d55a136a49539261ab4cf7c45669", "name": "User Needs", "description": "asking user is doing today", "created_timestamp": "2023-07-22 18:37:26.027347", "updated_timestamp": "2023-07-22 18:37:26.027347", "collection": [{"prompt_text": "You are a Nurse ChatBot and your audience are Patient.\n                     Create a concise and informative answer (no more than 20 words) for a given question \n                      ask user how he is doing today and what can we do to help him \n                   ", "created_timestamp": "2023-07-22 18:37:27.899560", "prompt_template": "ZeroShotPrompt", "version": 1, "executable": false, "output": "How are you feeling today? Is there anything specific we can assist you with?", "metrics": {"profanity": false, "prompt_tokens": 50}, "response_time": 1.834319829940796}]}]}
+{
+    "name": "BlueAngel",
+    "description": "New Session for BlueAngel Use case",
+    "session_id": "c2159ecf3bd84719ac2d0f3d43113199",
+    "active_status": true,
+    "offline_folder_path": "storage/",
+    "created_timestamp": "2023-07-22 18:37:21.944275",
+    "update_timestamp": "2023-07-22 18:37:21.944275",
+    "filename": "c2159ecf3bd84719ac2d0f3d43113199.json",
+    "registry": [
+        {
+            "prompt_id": "4d4194b3d2b24380a0be84be2567efd6",
+            "name": "GreetUser",
+            "description": "greeting user at begining of conversation",
+            "created_timestamp": "2023-07-22 18:37:21.946511",
+            "updated_timestamp": "2023-07-22 18:37:21.946511",
+            "collection": [
+                {
+                    "prompt_text": "You are a Nurse ChatBot and your audience are Patient.\n                     Create a concise and informative answer (no more than 10 words) for a given question \n                      Greet the person \n                   ",
+                    "created_timestamp": "2023-07-22 18:37:24.303317",
+                    "prompt_template": "ZeroShotPrompt",
+                    "version": 1,
+                    "executable": false,
+                    "output": "Hello! How can I assist you today?",
+                    "metrics": {
+                        "profanity": false,
+                        "prompt_tokens": 39
+                    },
+                    "response_time": 1.8874340057373047
+                },
+                {
+                    "prompt_text": "Greet John Ryan",
+                    "created_timestamp": "2023-07-22 18:37:26.027347",
+                    "prompt_template": "ZeroShotPrompt",
+                    "version": 2,
+                    "executable": false,
+                    "output": "Hello John Ryan! How are you today?",
+                    "metrics": {
+                        "profanity": false,
+                        "prompt_tokens": 4
+                    },
+                    "response_time": 1.7085800170898438
+                }
+            ]
+        },
+        {
+            "prompt_id": "dd58d55a136a49539261ab4cf7c45669",
+            "name": "User Needs",
+            "description": "asking user is doing today",
+            "created_timestamp": "2023-07-22 18:37:26.027347",
+            "updated_timestamp": "2023-07-22 18:37:26.027347",
+            "collection": [
+                {
+                    "prompt_text": "You are a Nurse ChatBot and your audience are Patient.\n                     Create a concise and informative answer (no more than 20 words) for a given question \n                      ask user how he is doing today and what can we do to help him \n                   ",
+                    "created_timestamp": "2023-07-22 18:37:27.899560",
+                    "prompt_template": "ZeroShotPrompt",
+                    "version": 1,
+                    "executable": false,
+                    "output": "How are you feeling today? Is there anything specific we can assist you with?",
+                    "metrics": {
+                        "profanity": false,
+                        "prompt_tokens": 50
+                    },
+                    "response_time": 1.834319829940796
+                }
+            ]
+        }
+    ]
+}

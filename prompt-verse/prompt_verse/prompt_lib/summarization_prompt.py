@@ -15,5 +15,6 @@ class SummarizationPrompt:
         template = """Summarize this document: {query} 
                       Summary:
                     """
-        template = template.replace("{query}", input_params["query"])
+        template = template.format(**input_params)
+        
         return template
